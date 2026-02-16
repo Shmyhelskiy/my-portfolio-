@@ -1,5 +1,10 @@
 {
   "HomePage": {
     "title": "Привіт світ!"
+  },
+  "Navigation": {
+    "home": "Головна",
+    "skills": "Скіли",
+    "projects": "Проєкти"
   }
 }
