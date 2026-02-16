@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+}
+
+:root {
+  --background: #f7f8f9; /* bgBase */
+}
