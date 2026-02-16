@@ -3,6 +3,7 @@ import "./globals.css";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import Navbar from "@/copmonents/navigation/Navbar";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -23,8 +24,13 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html lang="en">
-      <body className={`${inter.variable} h-screen antialiased bg-background`}>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+      <body
+        className={`${inter.variable} min-h-screen w-full antialiased bg-background`}
+      >
+        <NextIntlClientProvider>
+          <Navbar />
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

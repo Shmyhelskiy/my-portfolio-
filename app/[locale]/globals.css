@@ -3,9 +3,24 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --font-inter: var(--font-inter);
   --color-background: var(--background);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-nav-hover: var(--nav-hover);
+  --color-nav-selected: var(--nav-selected);
+  --color-nav-foreground-selected: var(--nav-foreground-selected);
 }
 
 :root {
-  --background: #f7f8f9; /* bgBase */
+  --background: #f7f8f9;
+  --secondary-foreground: #656970;
+
+  /* Nav */
+  --nav-hover: rgba(0, 0, 0, 0.02);
+  --nav-selected: rgba(0, 0, 0, 0.04);
+  --nav-foreground-selected: rgb(56, 100, 245);
+}
+
+html {
+  scroll-behavior: smooth;
 }
