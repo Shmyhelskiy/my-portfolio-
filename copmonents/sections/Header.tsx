@@ -1,6 +1,8 @@
 "use client";
 import dynamic from "next/dynamic";
 import Navbar from "../navigation/Navbar";
+import LangSwitcher from "../navigation/LangSwitcher";
+import Separator from "../ui/Separator";
 
 const ThemeToggle = dynamic(() => import("../navigation/ThemeToggle"), {
   ssr: false,
@@ -13,11 +15,11 @@ export default function Header() {
       <div className="flex items-center gap-2 p-2 rounded-4xl border border-border">
         <Navbar />
 
-        <div className="w-px h-6 bg-border-hight" />
+        <Separator />
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          {/* <LangSwitcher /> */}
+          <LangSwitcher />
         </div>
       </div>
     </header>

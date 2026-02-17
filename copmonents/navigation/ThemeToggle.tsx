@@ -7,11 +7,15 @@ import { Button } from "../ui/Button";
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
 
+  const toggleTheme = () => {
+    const newTheme = theme === "dark" ? "light" : "dark";
+
+    setTheme(newTheme);
+    document.cookie = `theme=${newTheme}; path=/; max-age=31536000; SameSite=Lax`;
+  };
+
   return (
-    <Button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      aria-label="Theme toggle"
-    >
+    <Button onClick={toggleTheme} aria-label="Theme toggle">
       <motion.div
         initial={false}
         animate={{

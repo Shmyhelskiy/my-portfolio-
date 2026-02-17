@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "next-themes";
 import Header from "@/copmonents/sections/Header";
+import { cookies } from "next/headers";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -23,10 +24,24 @@ export default async function LocaleLayout({ children, params }: Props) {
     notFound();
   }
 
+  const cookieStore = await cookies();
+  const theme = cookieStore.get("theme")?.value || "light";
+
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html
+      lang={locale}
+      className={theme}
+      style={{ colorScheme: theme }}
+      suppressHydrationWarning
+    >
       <body className={`${inter.variable} min-h-screen w-full antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="system">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme={theme}
+          enableSystem={false}
+          enableColorScheme={true}
+          disableTransitionOnChange
+        >
           <NextIntlClientProvider>
             <Header />
             {children}
