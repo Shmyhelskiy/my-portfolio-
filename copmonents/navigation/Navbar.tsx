@@ -13,18 +13,16 @@ export default function Navbar() {
 
   const navLinks = useMemo(
     () => [
-      { label: t("home"), id: SectionId.Home },
-      { label: t("skills"), id: SectionId.Skills },
-      { label: t("projects"), id: SectionId.Projects },
+      { label: t(SectionId.Home), id: SectionId.Home },
+      { label: t(SectionId.Skills), id: SectionId.Skills },
+      { label: t(SectionId.Projects), id: SectionId.Projects },
     ],
     [t],
   );
+
   return (
-    <nav
-      className="fixed top-0 left-1/2 -translate-x-1/2 w-full z-10 flex justify-center font-inter pt-3"
-      aria-label="Main navigation"
-    >
-      <ul className="flex gap-2 items-center bg-white py-2 px-6 rounded-4xl">
+    <nav aria-label="Main navigation">
+      <ul className="flex gap-2 items-center">
         {navLinks.map((link) => {
           const isActive = activeSection === link.id;
           return (
@@ -32,13 +30,12 @@ export default function Navbar() {
               key={link.id}
               className={cn(
                 "px-2 py-1.5 font-medium leading-6 tracking-[-0.2px] rounded-2xl text-secondary-foreground hover:bg-nav-hover duration-400 ease-out transition-all",
-                isActive &&
-                  "bg-nav-selected! cursor-default text-nav-foreground-selected",
+                isActive && "bg-nav-selected! text-nav-foreground-selected",
               )}
             >
               <button
                 onClick={() => scrollToSection(link.id)}
-                className="cursor-pointer"
+                className={cn("cursor-pointer outline-none", isActive && "cursor-default")}
               >
                 {link.label}
               </button>

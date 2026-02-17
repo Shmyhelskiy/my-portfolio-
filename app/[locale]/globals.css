@@ -6,6 +6,10 @@
   --font-inter: var(--font-inter);
   --color-background: var(--background);
   --color-secondary-foreground: var(--secondary-foreground);
+  --color-border: var(--border);
+  --color-border-hight: var(--border-hight);
+  --color-primary-muted: var(--primary-muted);
+  --color-primary-muted-hover: var(--primary-muted-hover);
   --color-nav-hover: var(--nav-hover);
   --color-nav-selected: var(--nav-selected);
   --color-nav-foreground-selected: var(--nav-foreground-selected);
@@ -15,12 +19,39 @@
   --background: #f7f8f9;
   --secondary-foreground: #656970;
 
-  /* Nav */
+  --primary-muted: #0b98aa0f;
+  --primary-muted-hover: #0b98aa1a;
+
+  --border: rgba(0, 0, 0, 0.08);
+  --border-hight: rgba(0, 0, 0, 0.12);
+
   --nav-hover: rgba(0, 0, 0, 0.02);
   --nav-selected: rgba(0, 0, 0, 0.04);
   --nav-foreground-selected: rgb(56, 100, 245);
 }
 
+.dark {
+  --background: #0d1117;
+  --secondary-foreground: #9ca3af;
+
+  --primary-muted: rgba(15, 184, 206, 0.1);
+  --primary-muted-hover: rgba(15, 184, 206, 0.2);
+
+  --border: rgba(255, 255, 255, 0.1);
+  --border-hight: rgba(255, 255, 255, 0.15);
+
+  --nav-hover: rgba(255, 255, 255, 0.05);
+  --nav-selected: rgba(255, 255, 255, 0.08);
+  --nav-foreground-selected: rgb(96, 165, 250);
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
 }
