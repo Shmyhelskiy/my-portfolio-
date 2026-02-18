@@ -6,5 +6,24 @@
     "home": "Головна",
     "skills": "Скіли",
     "projects": "Проєкти"
+  },
+  "Home": {
+    "title": "Олександр Шмигельський",
+    "subtitle": "Frontend розробник",
+    "description": "Зосереджений на створенні продуктів, що поєднують продуманий дизайн та надійну інженерію. Наразі відкритий для нових можливостей.",
+    "carouselSkills": [
+      "Інтуїтивний UI-розробка",
+      "Оптимізація продуктивності",
+      "Адаптивний веб-дизайн",
+      "Сучасний стек технологій"
+    ],
+    "currentProject-title": "В розробці",
+    "currentProject-in-progress": "In Progress",
+    "currentProject-name-project": "Проєкт: NDA",
+    "currentProject-description-project": "Опис: MVP платформи SaaS",
+    "location-title": "Локація",
+    "location-location": "Україна, Львів",
+    "connect-title": "Контакти",
+    "connect-get-in-touch": "Зв'яжіться з мною"
   }
 }

@@ -9,11 +9,16 @@
   --color-secondary-foreground: var(--secondary-foreground);
   --color-border: var(--border);
   --color-border-hight: var(--border-hight);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
   --color-primary-muted: var(--primary-muted);
   --color-primary-muted-hover: var(--primary-muted-hover);
   --color-nav-hover: var(--nav-hover);
   --color-nav-selected: var(--nav-selected);
   --color-nav-foreground-selected: var(--nav-foreground-selected);
+  --color-card: var(--card);
+  --color-progress: var(--progress);
+  --shadow-card: var(--shadow-card);
 }
 
 :root {
@@ -21,6 +26,8 @@
   --foreground: #111214;
   --secondary-foreground: #656970;
 
+  --primary: #0b98aa;
+  --primary-hover: #0ea5b9;
   --primary-muted: #0b98aa0f;
   --primary-muted-hover: #0b98aa1a;
 
@@ -30,6 +37,14 @@
   --nav-hover: rgba(0, 0, 0, 0.02);
   --nav-selected: rgba(0, 0, 0, 0.04);
   --nav-foreground-selected: rgb(56, 100, 245);
+
+  --card: #ffffff;
+
+  --progress: #5d9669;
+
+  --shadow-card:
+    0px 4px 24px 0 rgba(0, 0, 0, 0.04), 0px 24px 24px 0 rgba(0, 0, 0, 0.24),
+    0px 0px 0px 3px rgba(0, 0, 0, 0.04);
 }
 
 .dark {
@@ -37,6 +52,8 @@
   --foreground: #ecedee;
   --secondary-foreground: #9ca3af;
 
+  --primary: #12b5c9;
+  --primary-hover: #22d3ee;
   --primary-muted: rgba(15, 184, 206, 0.1);
   --primary-muted-hover: rgba(15, 184, 206, 0.2);
 
@@ -46,6 +63,13 @@
   --nav-hover: rgba(255, 255, 255, 0.05);
   --nav-selected: rgba(255, 255, 255, 0.08);
   --nav-foreground-selected: rgb(96, 165, 250);
+
+  --card: #161b22;
+
+  --progress: #71b380;
+
+  --shadow-card:
+    0px 4px 20px 0 rgba(0, 0, 0, 0.4), 0px 0px 0px 1px rgba(255, 255, 255, 0.08);
 }
 
 html {
