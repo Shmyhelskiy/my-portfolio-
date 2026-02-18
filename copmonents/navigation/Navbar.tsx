@@ -29,7 +29,7 @@ export default function Navbar() {
             <li
               key={link.id}
               className={cn(
-                "px-2 py-1.5 font-medium leading-6 tracking-[-0.2px] rounded-2xl text-secondary-foreground hover:bg-nav-hover duration-400 ease-out transition-all",
+                "px-1 py-0.5 md:px-2 md:py-1.5 font-medium leading-6 tracking-[-0.2px] rounded-2xl text-secondary-foreground hover:bg-nav-hover duration-400 ease-out transition-all",
                 isActive && "bg-nav-selected! text-nav-foreground-selected",
               )}
             >

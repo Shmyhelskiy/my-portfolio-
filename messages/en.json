@@ -6,5 +6,24 @@
     "home": "Home",
     "skills": "Skills",
     "projects": "Projects"
+  },
+  "Home": {
+    "title": "Alex Shmyhelskyi",
+    "subtitle": "Frontend developer",
+    "description": "Focused on building products that blend thoughtful design with solid engineering. Currently open to new opportunities.",
+    "carouselSkills": [
+      "Intuitive UI Development",
+      "Performance Optimization",
+      "Responsive Web Design",
+      "Cutting-Edge Tech Stack"
+    ],
+    "currentProject-title": "Currently building",
+    "currentProject-in-progress": "In Progress",
+    "currentProject-name-project": "Project: NDA",
+    "currentProject-description-project": "Description: MVP of SaaS platform",
+    "location-title": "Location",
+    "location-location": "Ukraine, Lviv",
+    "connect-title": "Connect",
+    "connect-get-in-touch": "Get in touch"
   }
 }
