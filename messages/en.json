@@ -25,5 +25,9 @@
     "location-location": "Ukraine, Lviv",
     "connect-title": "Connect",
     "connect-get-in-touch": "Get in touch"
+  },
+  "Skills": {
+    "title": "Skills & Tools",
+    "subtitle": "Technologies I work with daily to bring ideas to life."
   }
 }
