@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
-import PulsIndicator from "../PulsIndicator";
+import PulsIndicator from "../../PulsIndicator";
 
-export default function ProjectCard() {
+export default function HomeProjectCard() {
   const t = useTranslations("Home");
 
   return (

@@ -29,5 +29,16 @@
   "Skills": {
     "title": "Skills & Tools",
     "subtitle": "Technologies I work with daily to bring ideas to life."
+  },
+  "Projects": {
+    "title": "Projects",
+    "subtitle": "A showcase of my recent work, where design meets functional code.",
+    "items": {
+      "1": {
+        "title": "NDA",
+        "subtitle": "A comprehensive SaaS B2B solution for optimizing corporate communication between businesses.",
+        "description": "Engineered core platform features with a focus on scalability and performance. Implementation of a custom Design System to ensure UI consistency and accelerated development cycles across the application."
+      }
+    }
   }
 }

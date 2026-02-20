@@ -1,7 +1,7 @@
-import ConnectCard from "../ui/cards/ConnetctCard";
-import MainInfoCard from "../ui/cards/MainInfoCard";
-import ProjectCard from "../ui/cards/ProjectCard";
-import LocationCard from "../ui/cards/LocationCard";
+import ConnectCard from "../ui/cards/home-section-cards/ConnetctCard";
+import MainInfoCard from "../ui/cards/home-section-cards/MainInfoCard";
+import HomeProjectCard from "../ui/cards/home-section-cards/HomeProjectCard";
+import LocationCard from "../ui/cards/home-section-cards/LocationCard";
 
 export default function HomeSection() {
   return (
@@ -10,7 +10,7 @@ export default function HomeSection() {
       id="home"
     >
       <MainInfoCard />
-      <ProjectCard />
+      <HomeProjectCard />
       <LocationCard />
       <ConnectCard />
     </section>

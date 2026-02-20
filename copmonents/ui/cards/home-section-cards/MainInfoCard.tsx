@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
-import Separator from "../Separator";
-import SkillCarousel from "../SkillCarousel";
+import Separator from "../../Separator";
+import SkillCarousel from "../../SkillCarousel";
 
 export default function MainInfoCard() {
   const t = useTranslations("Home");

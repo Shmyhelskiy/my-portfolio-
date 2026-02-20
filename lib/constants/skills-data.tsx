@@ -1,6 +1,6 @@
-import { Skill } from "../types/skills";
+import { SkillTypes } from "../types/data-types";
 
-export const SKILLS: Skill[] = [
+export const skillsData: SkillTypes[] = [
   {
     title: "HTML5",
     lightIcon: "/html5.svg",
@@ -91,5 +91,11 @@ export const SKILLS: Skill[] = [
     lightIcon: "/figma.svg",
     darkIcon: "/figma.svg",
     alt: "Figma Logo",
+  },
+  {
+    title: "Shadcn/ui",
+    lightIcon: "/shadcn-ui.svg",
+    darkIcon: "/shadcn-ui_dark.svg",
+    alt: "Shadcn UI",
   },
 ];

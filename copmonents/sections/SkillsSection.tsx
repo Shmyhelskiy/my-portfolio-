@@ -1,14 +1,11 @@
-import { SKILLS } from "@/lib/constants/skills";
+import { skillsData } from "@/lib/constants/skills-data";
 import { useTranslations } from "next-intl";
-import { SkillCard } from "../ui/cards/SkillCard";
+import { SkillCard } from "../ui/cards/skills-section-cards/SkillCard";
 
 export default function SkillsSection() {
   const t = useTranslations("Skills");
   return (
-    <section
-      className=" flex flex-col gap-3 font-inter"
-      id="skills"
-    >
+    <section className=" flex flex-col gap-3 font-inter" id="skills">
       <h2 className="text-2xl md:text-3xl font-bold tracking-[-0.2px] text-foreground">
         {t("title")}
       </h2>
@@ -17,7 +14,7 @@ export default function SkillsSection() {
       </p>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-        {SKILLS.map((skill) => (
+        {skillsData.map((skill) => (
           <SkillCard key={skill.title} {...skill} />
         ))}
 
