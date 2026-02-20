@@ -3,24 +3,32 @@ import { motion } from "motion/react";
 import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
 import { Button } from "../ui/Button";
+import { useState } from "react";
+import { ThemeEnum } from "@/lib/constants/theme";
 
-export default function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
+export default function ThemeToggle({
+  initialTheme,
+}: {
+  initialTheme?: string;
+}) {
+  const { setTheme } = useTheme();
+
+  const [currentTheme, setCurrentTheme] = useState(initialTheme);
 
   const toggleTheme = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
-
+    const newTheme =
+      currentTheme === ThemeEnum.Dark ? ThemeEnum.Light : ThemeEnum.Dark;
     setTheme(newTheme);
+    setCurrentTheme(newTheme);
     document.cookie = `theme=${newTheme}; path=/; max-age=31536000; SameSite=Lax`;
   };
-
   return (
     <Button onClick={toggleTheme} aria-label="Theme toggle">
       <motion.div
         initial={false}
         animate={{
-          rotate: theme === "dark" ? 0 : 90,
-          scale: theme === "dark" ? 1 : 0,
+          rotate: currentTheme === ThemeEnum.Dark ? 0 : 90,
+          scale: currentTheme === ThemeEnum.Dark ? 1 : 0,
         }}
         transition={{ type: "spring", stiffness: 200, damping: 10 }}
         className="absolute text-yellow-500"
@@ -31,8 +39,8 @@ export default function ThemeToggle() {
       <motion.div
         initial={false}
         animate={{
-          rotate: theme === "light" ? 0 : -90,
-          scale: theme === "light" ? 1 : 0,
+          rotate: currentTheme === ThemeEnum.Light ? 0 : -90,
+          scale: currentTheme === ThemeEnum.Light ? 1 : 0,
         }}
         transition={{ type: "spring", stiffness: 200, damping: 10 }}
         className="absolute text-orange-500"
