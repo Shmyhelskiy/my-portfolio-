@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Skill } from "@/lib/types/skills";
+import { SkillTypes } from "@/lib/types/data-types";
 
-export const SkillIcon = ({ title, lightIcon, darkIcon, alt }: Skill) => {
+export const SkillIcon = ({ title, lightIcon, darkIcon, alt }: SkillTypes) => {
   return (
     <div className="flex flex-col items-center gap-3">
       <Image

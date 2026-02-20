@@ -1,4 +1,4 @@
-import { SkillIcon } from "../SkillIcon";
+import { SkillIcon } from "../../SkillIcon";
 
 interface SkillCardProps {
   title: string;
