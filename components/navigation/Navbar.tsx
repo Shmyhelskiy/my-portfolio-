@@ -1,7 +1,7 @@
 "use client";
 import { SectionId } from "@/lib/constants/navigation";
 import { useScrollSpy } from "@/lib/hooks/useScrollSpy";
-import { cn } from "@/utils/cn";
+import { cn } from "@/lib/utils/cn";
 import { useTranslations } from "next-intl";
 import { useMemo } from "react";
 
@@ -35,7 +35,10 @@ export default function Navbar() {
             >
               <button
                 onClick={() => scrollToSection(link.id)}
-                className={cn("cursor-pointer outline-none", isActive && "cursor-default")}
+                className={cn(
+                  "cursor-pointer outline-none",
+                  isActive && "cursor-default",
+                )}
               >
                 {link.label}
               </button>

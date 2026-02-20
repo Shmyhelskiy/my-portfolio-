@@ -4,7 +4,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "next-themes";
-import Header from "@/copmonents/sections/Header";
+import Header from "@/components/layout/Header";
 import { cookies } from "next/headers";
 
 const inter = Inter({

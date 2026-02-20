@@ -1,5 +1,5 @@
-import { getGradientColors } from "@/lib/helpers/getGradientColors";
-import { cn } from "@/utils/cn";
+import { getGradientColors } from "@/lib/utils/getGradientColors";
+import { cn } from "@/lib/utils/cn";
 import Link from "next/link";
 
 interface ProjectCardProps {

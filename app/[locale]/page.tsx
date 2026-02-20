@@ -1,6 +1,6 @@
-import HomeSection from "@/copmonents/sections/HomeSection";
-import SkillsSection from "@/copmonents/sections/SkillsSection";
-import ProjectSection from "@/copmonents/sections/ProjectSection";
+import HomeSection from "@/components/sections/HomeSection";
+import SkillsSection from "@/components/sections/SkillsSection";
+import ProjectSection from "@/components/sections/ProjectSection";
 
 export default function Page() {
   return (
