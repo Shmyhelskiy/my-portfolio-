@@ -1,5 +1,10 @@
-import { MapPin } from "lucide-react";
+"use client";
+import { Copy, MapPin, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { Button } from "../../Button";
+import { copyText } from "@/helpers/utils/copy-text";
+
+const TEL: string = "+380683011136";
 
 export default function LocationCard() {
   const t = useTranslations("Home");
@@ -17,6 +22,21 @@ export default function LocationCard() {
       <p className="text-foreground text-lg font-medium tracking-[-0.2px]">
         {t("location-location")}
       </p>
+
+      <div className="flex gap-2 items-center">
+        <Phone size={14} className="text-icon" />
+
+        <a
+          href={`tel:${TEL}`}
+          className="text-secondary-foreground hover:text-foreground"
+        >
+          {TEL}
+        </a>
+
+        <Button className="size-6 text-icon" onClick={() => copyText(TEL)}>
+          <Copy size={16} />
+        </Button>
+      </div>
     </div>
   );
 }

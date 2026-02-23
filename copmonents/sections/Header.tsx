@@ -1,14 +1,8 @@
-// import dynamic from "next/dynamic";
 import Navbar from "../navigation/Navbar";
 import LangSwitcher from "../navigation/LangSwitcher";
 import Separator from "../ui/Separator";
 import ThemeToggle from "../navigation/ThemeToggle";
 import { cookies } from "next/headers";
-
-// const ThemeToggle = dynamic(() => import("../navigation/ThemeToggle"), {
-//   ssr: false,
-//   loading: () => <div className="size-8" />,
-// });
 
 export default async function Header() {
   const cookieStore = await cookies();
