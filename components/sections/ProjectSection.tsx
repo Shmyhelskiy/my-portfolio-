@@ -5,7 +5,11 @@ import ProjectCard from "../ui/cards/projects-section-cards/ProjectCard";
 export default function ProjectSection() {
   const t = useTranslations("Projects");
   return (
-    <section className="min-h-screen flex flex-col gap-3 font-inter" id="projects">
+    <section
+      className="min-h-screen flex flex-col gap-3 font-inter"
+      id="projects"
+      aria-label="Projects section"
+    >
       <h2 className="text-2xl md:text-3xl font-bold tracking-[-0.2px] text-foreground">
         {t("title")}
       </h2>

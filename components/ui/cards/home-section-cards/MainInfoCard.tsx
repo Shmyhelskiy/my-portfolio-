@@ -9,7 +9,7 @@ export default function MainInfoCard() {
       <Separator className="h-1 bg-primary rounded-full mb-8 w-12" />
 
       <div className="flex flex-col gap-3 font-inter">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-[-0.2px] text-foreground">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-[-0.2px] text-foreground">
           {t("title")}
         </h1>
         <p className="text-xl md:text-2xl tracking-[-0.2px] font-medium text-secondary-foreground">

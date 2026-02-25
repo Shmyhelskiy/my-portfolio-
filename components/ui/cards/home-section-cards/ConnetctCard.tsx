@@ -5,7 +5,7 @@ export default function ConnectCard() {
   const t = useTranslations("Home");
 
   return (
-    <div className="md:col-span-2 bg-card rounded-2xl h-fit p-2 md:p-6 flex flex-col sm:flex-row items-center gap-3 shadow-card ">
+    <div className="md:col-span-2 bg-card rounded-2xl h-fit p-2 md:p-6 flex flex-col sm:flex-row items-center gap-3 shadow-card">
       <div className="flex items-center gap-4">
         <p className="text-xs font-medium text-secondary-foreground uppercase tracking-widest">
           {t("connect-title")}

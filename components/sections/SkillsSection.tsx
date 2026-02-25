@@ -5,7 +5,11 @@ import { SkillCard } from "../ui/cards/skills-section-cards/SkillCard";
 export default function SkillsSection() {
   const t = useTranslations("Skills");
   return (
-    <section className=" flex flex-col gap-3 font-inter" id="skills">
+    <section
+      className=" flex flex-col gap-3 font-inter"
+      id="skills"
+      aria-label="Skills section"
+    >
       <h2 className="text-2xl md:text-3xl font-bold tracking-[-0.2px] text-foreground">
         {t("title")}
       </h2>
